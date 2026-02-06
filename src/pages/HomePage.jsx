@@ -15,7 +15,7 @@ function HomePage({ storeName }) {
                         </li>
                         <li>
                             <h3>Fast Shipping</h3>
-                            <p>Get your orders delviered quickly and safely</p>
+                            <p>Get your orders delivered quickly and safely</p>
                         </li>
                         <li>
                             <h3>Great Support</h3>
