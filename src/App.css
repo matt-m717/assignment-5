@@ -1,0 +1,20 @@
+#root {
+    width: 100%;
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.total-price {
+    gap: 8px;
+}
+
+.main-content {
+    flex: 1;
+}

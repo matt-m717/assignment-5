@@ -1,0 +1,14 @@
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border: 2px solid gray;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-weight: 600;
+    color: #059669;
+}

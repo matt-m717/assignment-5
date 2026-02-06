@@ -1,0 +1,12 @@
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 3rem;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("https://placehold.co/1200x400/667eea/ffffff");
+    background-size: cover;
+    background-position: center;
+}

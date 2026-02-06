@@ -1,0 +1,25 @@
+h2 {
+    margin: 0;
+    padding: 0;
+}
+.footer {
+    background-color: #333333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}

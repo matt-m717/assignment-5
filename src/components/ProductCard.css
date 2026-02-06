@@ -1,0 +1,26 @@
+.product-card {
+    background: white;
+    border-radius: 8px;
+    outline: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) 2;
+    margin-bottom: 16px;
+    padding: 16px;
+}
+
+.product-image {
+    border-radius: 5px;
+}
+
+.product-name {
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.product-description {
+    color: #666666;
+}
+
+.product-price {
+    font-weight: 600;
+    color: #059669;
+}
