@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import ProductCard from "../ProductCard";
 import { describe, expect } from "vitest";
 
@@ -19,5 +19,26 @@ describe("ProductCard", () => {
         expect(screen.getByText("Test description")).toBeInTheDocument();
         expect(screen.getByRole("img")).toBeInTheDocument();
         expect(screen.getByRole("button")).toBeInTheDocument();
+    });
+
+    test("calls addToCart when button is clicked", () => {
+        const mockAddToCart = vi.fn();
+        const product = {
+            id: 1,
+            name: "TestName",
+            price: 99.99,
+            image: "https://placehold.co/600x400",
+            description: "Test description"
+        };
+        render(
+            <ProductCard
+                product={product}
+                addToCart={mockAddToCart}
+            ></ProductCard>
+        );
+        const addToCartButton = screen.getByRole("button");
+        fireEvent.click(addToCartButton);
+        expect(mockAddToCart).toHaveBeenCalledWith(product);
+        expect(mockAddToCart).toHaveBeenCalledTimes(1);
     });
 });
