@@ -1,12 +1,14 @@
 import CartItem from "../components/CartItem";
+import "./CartPage.css";
 
 function CartPage({ cart, removeFromCart }) {
-    const total = () => cart.reduce((total, item) => total + item.price, 0);
+    const total = () =>
+        cart.reduce((total, item) => total + item.price, 0).toFixed(2);
     return (
-        <main className="main-content">
+        <main className="main-content" id="cart-page">
             <h2>Shopping Cart</h2>
             {cart.length > 0 ? (
-                <div>
+                <div className="items">
                     {cart.map(item => (
                         <CartItem
                             item={item}

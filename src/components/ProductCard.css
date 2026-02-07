@@ -3,11 +3,11 @@
     border-radius: 8px;
     outline: 1px solid rgba(0, 0, 0, 0.12);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) 2;
-    margin-bottom: 16px;
     padding: 16px;
 }
 
 .product-image {
+    max-width: 400px;
     border-radius: 5px;
 }
 

@@ -1,12 +1,13 @@
+#home-page {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
 .why-shop {
     display: flex;
     flex-direction: column;
-    margin-top: 4rem;
-    text-align: center;
-}
-
-.why-shop h2 {
-    margin-bottom: 1rem;
+    gap: 16px;
 }
 
 .reasons {
@@ -17,7 +18,8 @@
 
 .reasons ul {
     display: flex;
-    list-style: none;
+    flex-direction: row;
+    gap: 16px;
 }
 
 .reasons li {
@@ -25,9 +27,7 @@
     border-radius: 8px;
     outline: 1px solid rgba(0, 0, 0, 0.12);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) 2;
-    margin-bottom: 12px;
     padding: 12px;
-    margin-left: 20px;
 }
 
 .reasons h3 {

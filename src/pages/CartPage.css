@@ -1,0 +1,14 @@
+#cart-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}

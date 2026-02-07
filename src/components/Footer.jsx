@@ -3,9 +3,9 @@ import "./Footer.css";
 function Footer({ storeName, email, phone, address }) {
     return (
         <footer className="footer">
-            <div>
+            <div className="contact">
                 <h2>{storeName}</h2>
-                <ul className="contact">
+                <ul>
                     <li>
                         <p>{`Email: ${email}`}</p>
                     </li>
@@ -17,20 +17,22 @@ function Footer({ storeName, email, phone, address }) {
                     </li>
                 </ul>
             </div>
-            <ul className="links">
-                <li>
-                    <a>About</a>
-                </li>
-                <li>
-                    <a href={`mailto:${email}`}>Contact</a>
-                </li>
-                <li>
-                    <a>Privacy Policy</a>
-                </li>
-                <li>
-                    <a>Terms of Service</a>
-                </li>
-            </ul>
+            <div className="links">
+                <ul>
+                    <li>
+                        <a>About</a>
+                    </li>
+                    <li>
+                        <a href={`mailto:${email}`}>Contact</a>
+                    </li>
+                    <li>
+                        <a>Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a>Terms of Service</a>
+                    </li>
+                </ul>
+            </div>
         </footer>
     );
 }

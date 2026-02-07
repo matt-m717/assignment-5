@@ -1,20 +1,13 @@
 #root {
-    width: 100%;
     text-align: center;
 }
 
-.products {
+.app {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-.total-price {
-    gap: 8px;
-}
-
-.main-content {
+main {
     flex: 1;
 }

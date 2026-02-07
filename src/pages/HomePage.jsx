@@ -3,7 +3,7 @@ import "./HomePage.css";
 
 function HomePage({ storeName }) {
     return (
-        <main className="main-content">
+        <main className="main-content" id="home-page">
             <Hero storeName={storeName} />
             <div className="why-shop">
                 <h2>Why Shop With Us?</h2>
